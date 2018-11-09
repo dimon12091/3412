@@ -1,0 +1,112 @@
+.dws-container {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    right: 10%;
+    width: 350px;
+    overflow: hidden;
+    transform: translateY(530px);
+    transition: .5s;
+}
+
+.dws-container:hover {
+    transform: translateY(520px);
+}
+
+.toggleForm:checked~.dws-container {
+    transform: translateY(0);
+}
+
+.toggleForm[type="checkbox"] {
+    display: none;
+}
+
+.formBox {
+    padding: 30px;
+    border: 4px solid #8a36a5;
+    background: #fff;
+}
+
+.toggleForm {
+    display: block;
+    background: #8a36a5;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 24px;
+    padding: 10px 0;
+    border-radius: 8px 8px 0 0;
+    width: 85%;
+    cursor: pointer;
+}
+
+.toggleForm i {
+    position: absolute;
+    top: 7px;
+    left: 40px;
+    font-size: 40px;
+}
+
+.inputBox {
+    position: relative;
+    margin: 0 0 20px;
+}
+
+.labelText {
+    position: absolute;
+    line-height: 55px;
+    font-size: 18px;
+    color: #a5a5a5;
+    transition: .5s;
+}
+
+.focus .labelText {
+    transform: translateY(-30px);
+    font-size: 14px;
+    color: #d33ebc;
+}
+
+.userInput {
+    position: relative;
+    background: transparent;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    color: #575454;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+textarea.userInput {
+    height: 100px;
+    margin-top: 12px;
+}
+
+.personalDoc,
+.personalDoc a {
+    color: #858585;
+}
+
+.personalDoc a:hover {
+    text-decoration: none;
+    color: #b33edc;
+}
+
+.button {
+    background: #8a36a5;
+    color: #fff;
+    width: 45%;
+    height: 35px;
+    font-size: 18px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 50%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.button:hover {
+    background: #b33edc;
+}

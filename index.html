@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Media queries CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css" media="all and (max-width: 900px)">
+</head>
+
+<body id="full">
+
+    <header>
+        <div id="one">
+            <div class="header" id="headert">
+                <div class="section-inner">
+                    <div class="logo">Dima Boyko</div>
+                </div>
+            </div>
+
+            <input type="checkbox" id="dws-menu">
+            <div class="leb-menu">
+                <label for="dws-menu"><img src="images/icono-menu.png"></label>
+            </div>
+        </div>
+
+
+        <nav class="menu" id="menu_fast">
+            <div class="section-inner indents">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Портфолио</a></li>
+                    <li>
+                        <div class="btn" id="btn">
+                            <a href="#">
+                                <div class="burger"></div>
+                                <div class="burger"></div>
+                                <div class="burger"></div>
+                            </a>
+                        </div>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="dws-wrapper">
+        <input type="checkbox" name="toggle" id="dws-form" class="toggleForm">
+        <div class="dws-container" id="dws-container">
+            <label for="dws-form" class="toggleForm"><i class="fa fa-question-circle"></i>Анкета</label>
+            <form class="formBox">
+                <span id="close"> &times;</span>
+                <div class="inputBox">
+                    <label class="labelText">Ваше имя:</label>
+                    <input type="text" class="userInput" required>
+                </div>
+                <div class="inputBox">
+                    <label class="labelText">E-mail:</label>
+                    <input type="email" class="userInput" required>
+                </div>
+                <div class="inputBox">
+                    <label class="labelText">Номер телефона:</label>
+                    <input type="phone" class="userInput" required pattern="\d+">
+                </div>
+                <div class="inputBox">
+                    <label class="labelText">Сообщение:</label>
+                    <textarea class="userInput" required></textarea>
+                </div>
+                <div class="inputBox">
+                    <input type="checkbox" required>
+                    <label class="personalDoc">Я согласен на обработку моих <a href="#">персональных данных</a></label>
+                </div>
+                <input type="submit" value="Отправить" class="button">
+            </form>
+        </div>
+    </div>
+
+    <div class="banner hide-mobile" id="bannermobile">
+        <h2 class="text-banner">Семейство кошачьих</h2>
+        <img src="images/4.jpg" alt="Баннер">
+    </div>
+
+    <div class="body-content" id="bodycontent">
+        <div class="section-inner">
+
+            <h1>Дикая природа</h1>
+
+            <div class="news-list">
+
+                <div class="one-news mobile">
+                    <img src="images/1.jpg" alt="Кошка">
+                    <h2>О жизни кошек</h2>
+                    <p>Curabitur suscipit orci id mollis porttitor. Mauris aliquam egestas elit vel porta. Curabitur sit amet ligula volutpat ipsum sollicitudin ultrices sed vel metus. Quisque aliquet elit sit amet ipsum fringilla fringilla. Donec sit amet
+                        pharetra erat, aliquam euismod dolor. Nulla quis pulvinar purus. Sed tristique orci pharetra tellus eleifend, in condimentum nisl interdum.</p>
+                </div>
+
+
+
+                <div class="one-news one-news-second mobile">
+                    <img src="images/2.jpg" alt="Кошка">
+                    <h2>Необычные слоны</h2>
+                    <p>Curabitur suscipit orci id mollis porttitor. Mauris aliquam egestas elit vel porta. Curabitur sit amet ligula volutpat ipsum sollicitudin ultrices sed vel metus. Quisque aliquet elit sit amet ipsum fringilla fringilla. Donec sit amet
+                        pharetra erat, aliquam euismod dolor. </p>
+                </div>
+
+                <div class="one-news one-news-last mobile">
+                    <img src="images/3.jpg" alt="Кошка">
+                    <h2>Наши животные</h2>
+                    <p>Curabitur suscipit orci id mollis porttitor. Mauris aliquam egestas elit vel porta. Curabitur sit amet ligula volutpat ipsum sollicitudin ultrices sed vel metus. Quisque aliquet elit sit amet ipsum fringilla fringilla. Donec sit amet
+                        pharetra erat, aliquam euismod dolor. Nulla quis pulvinar purus. Sed tristique orci pharetra tellus eleifend, in condimentum nisl interdum. </p>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="text-columns clear">
+
+
+                <div class="main mobile">
+                    <h2>Животные в природе их особенности</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan finibus est sed ultricies. Praesent et tortor sagittis, maximus diam in, tristique nisl. Cras lobortis lectus diam, laoreet vestibulum sapien convallis vitae.
+                        Pellentesque est ante, tincidunt ut ultricies in, consequat id risus. Phasellus in nunc maximus, porta odio nec, tincidunt justo. Aliquam non luctus quam, cursus placerat massa. Aliquam fringilla arcu justo, ac maximus lectus ullamcorper
+                        eu.
+                    </p>
+
+                    <p>Suspendisse vel blandit elit, id auctor velit. Etiam sit amet rutrum orci. Morbi vitae venenatis leo, in gravida dolor. Nam sollicitudin lectus vehicula augue tincidunt vestibulum quis ac sem. Etiam ultrices massa mauris. Ut commodo
+                        est non purus consectetur tincidunt. </p>
+
+                    <p>Curabitur suscipit orci id mollis porttitor. Mauris aliquam egestas elit vel porta. Curabitur sit amet ligula volutpat ipsum sollicitudin ultrices sed vel metus. Quisque aliquet elit sit amet ipsum fringilla fringilla. Donec sit amet
+                        pharetra erat, aliquam euismod dolor. Nulla quis pulvinar purus. Sed tristique orci pharetra tellus eleifend, in condimentum nisl interdum. </p>
+                </div>
+
+                <div class="right-side mobile">
+
+
+                    <div class="box-1">
+                        <h4>Важный контент</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan finibus est sed ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+
+                    <div class="box-2 hide-mobile">
+                        <h4>Средней важности</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan finibus est sed ultricies
+                        </p>
+                    </div>
+
+                    <div class="box-3 hide-mobile">
+                        <h4>Не важно</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan finibus est sed ultricies
+                        </p>
+                    </div>
+
+
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="section-inner">
+            <p>Подвал сайта Footer</p>
+        </div>
+    </div>
+    </div>
+    <script>
+        $(".userInput").focus(function() {
+            $(this).parent().addClass("focus");
+        }).blur(function() {
+            if ($(this).val() === '') {
+                $(this).parent().removeClass("focus");
+            }
+        })
+    </script>
+
+
+    <script src="js/js.js"></script>
+</body>
+
+</html>
